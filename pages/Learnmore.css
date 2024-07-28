@@ -1,0 +1,197 @@
+   /* importing font  */
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+   /* importing font  */
+   @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+   /* font itim imported above  */
+
+   :root {
+       --primary-color: rgb(127, 86, 217);
+       --font: inter;
+       --light-font-color: rgb(142, 150, 165);
+       --navbar: #1d0c7d;
+       --footerbg: #09003f;
+       --linkhover: #ffff00;
+       --rare:linear-gradient(#1d0c7d,rgb(0, 204, 255));
+       --circluar-rare: radial-gradient(rgb(67, 67, 224),rgb(0, 145, 255));
+
+   }
+
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       color: rgb(0, 0, 0);
+       font-family: itim;
+
+   }
+
+   body {
+       /* background: #404040; */
+       padding: 0 10px;
+       width: 100%;
+   }
+
+   /* navigation style here  */
+
+   nav {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       /* background: #b3b3b3; */
+       background: var(--navbar);
+       height: 80px;
+   }
+
+   .nav-part-1 {
+       min-width: 500px;
+       /* background: #000; */
+       display: flex;
+       justify-content: space-around;
+       min-height: 50px;
+       align-items: center;
+   }
+
+   .nav-part-1 a {
+       text-decoration: none;
+       color: white;
+       /* font-family: itim; */
+   }
+
+   .nav-part-1 a:hover {
+       color: var(--linkhover);
+   }
+
+   .nav-part-2 {
+       min-width: 250px;
+       /* background: #000; */
+       display: flex;
+       justify-content: space-between;
+       min-height: 50px;
+       align-items: center;
+       margin-right: 50px;
+   }
+
+   /* .nav-part-2 button {
+       height: 40px;
+       width: 100px;
+       border-radius: 40px;
+       color: black;
+       transition: all ease 0.5s;
+       outline: none;
+   }
+
+   .nav-part-2 button:hover {
+       background: #000;
+       color: white;
+       border: none;
+   } */
+   .nav-part-2 a{
+    height: 40px;
+    width: 100px;
+    border-radius: 40px;
+    color: #fff;
+    transition: all ease 0.5s;
+    text-align: center;
+    border: 2px solid white ;
+    padding: 8px;
+    text-decoration: none;
+}
+
+.nav-part-2 a:hover{
+    color: #ffff00;
+    border: 2px solid #ffff00 ;
+}
+
+
+   /* nava end here  */
+
+   .learn-more {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+       margin: 50px;
+   }
+
+   .learn-part-1 h1 {
+       font-size: 4vw;
+       margin-bottom: 30px;
+   }
+
+   .learn-part-1 p {
+       font-size: 1.5vw;
+       padding: 0 80px 0 0;
+       color: #000;
+   }
+
+   .learn-part-2 {
+       display: flex;
+       flex-direction: column;
+margin: 0 0 0 150px;
+   }
+
+   .learn-part-2 img {
+       height: 200px;
+       width: 300px;
+   }
+
+   .learn-part-2 svg {
+       position: relative;
+       top: 28px;
+       left: -30px;
+
+   }
+
+   .learn-part-2 span {
+       font-size: larger;
+       padding: 0 0 0 40px;
+   }
+
+   .learn-part-2 button{
+    height: 50px;
+    width: 300px;
+    border-radius: 40px;
+    border: transparent;
+    transition: all ease 0.3s;
+   }
+   .learn-part-2 button:hover{
+    border: 2px solid black;
+    font-size: larger;
+    background: var(--circluar-rare);
+    color: white;
+   }
+
+
+   /* footer  */
+footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    padding: 30px;
+    /* background: #000; */
+    background: var(--footerbg);
+    height: 300px;
+    color: antiquewhite;
+}
+
+footer .footer-part-1 a,h2{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+
+footer .footer-part-3 a,p{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+footer a:hover{
+    color: var(--linkhover);
+}
+
+
+
+footer img{
+    height: 200px;
+    width: 200px;
+    margin-left: 50px;
+}
